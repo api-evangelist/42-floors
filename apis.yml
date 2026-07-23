@@ -1,10 +1,35 @@
 aid: 42-floors
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/42-floors.png
 name: 42 Floors
-description: 42 Floors is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  42Floors was a Y Combinator- and 500 Global-backed commercial real estate
+  search platform founded in 2011 by Jason Freedman to make it easy to discover
+  and lease office, coworking, retail, industrial, and warehouse space across
+  top U.S. markets. It aggregated a large listings database (the "42Floors MLS")
+  that brokers and tenants searched online. The company was acquired by Knotel in
+  2018, and the 42floors.com domain and listings service were later taken over by
+  Yardi, which folded them into CommercialCafe — 42floors.com now redirects there.
+  The only surviving developer surface is the first-party `mls` RubyGem, a client
+  for the (now-decommissioned) 42Floors MLS API at mls.42floors.com.
 url: https://raw.githubusercontent.com/api-evangelist/42-floors/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
+x-status: acquired
+x-status-note: >-
+  Acquired by Knotel (2018); listings service later acquired by Yardi and folded
+  into CommercialCafe. 42floors.com redirects to commercialcafe.com; the MLS API
+  (mls.42floors.com) and docs (docs.42floors.com) return SiteNotFound.
 x-backed-by:
 - 500-global
 x-tier: stub
@@ -14,6 +39,12 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Commercial Real Estate
+- PropTech
+- Real Estate Listings
+- Office Space
+- MLS
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +54,16 @@ maintainers:
 common:
 - type: Website
   url: https://42floors.com
+- type: GitHubOrganization
+  url: https://github.com/42floors
+- type: SourceCode
+  url: https://github.com/42floors/mls-gem
+- type: Packages
+  url: packages/42-floors-packages.yml
+- type: SDKs
+  url: packages/42-floors-packages.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

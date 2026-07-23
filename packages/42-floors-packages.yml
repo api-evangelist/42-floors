@@ -1,0 +1,26 @@
+generated: '2026-07-17'
+method: searched
+source: https://rubygems.org/gems/mls
+notes: >-
+  42 Floors published one first-party client library: the `mls` RubyGem, a Ruby
+  client for the 42Floors MLS (commercial real estate listings) API at
+  mls.42floors.com. The gem is still on RubyGems (v1.9.0, ~476k downloads) but
+  the underlying API host (mls.42floors.com) and docs host (docs.42floors.com)
+  now return "SiteNotFound" — the service was decommissioned after the company
+  was acquired (Knotel 2018, then Yardi / CommercialCafe). No npm, PyPI, Maven,
+  NuGet, Go, Packagist, or crates.io packages were found.
+packages:
+- language: ruby
+  registry: rubygems
+  name: mls
+  version: 1.9.0
+  released: '2019-01-18'
+  downloads: 476381
+  url: https://rubygems.org/gems/mls
+  source: https://github.com/42floors/mls-gem
+  docs: https://www.rubydoc.info/gems/mls/1.9.0
+  install: gem install mls
+  description: Ruby library for integrating with the 42Floors MLS (commercial real estate listings) API.
+  authors: Jon Bracy, James R. Bracy
+  official: true
+  status: unmaintained
