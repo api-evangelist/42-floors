@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "42-floors",
+    "captured_at": "2026-10-11T134425",
+    "source_url": "https://42floors.com",
+    "source_type": "Website",
+    "file": "42-floors-2026-10-11T134425.png",
+    "bytes": 50088,
+    "capture": "playwright-local"
+  }
+]
